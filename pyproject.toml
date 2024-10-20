@@ -1,0 +1,24 @@
+[project]
+name = "lmos_msgspec_types"
+version = "0.1.0"
+description = "An implementation of the OpenAI API Spec, written in MSG Spec"
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "msgspec"
+]
+
+[project.urls]
+homepage = "https://github.com/LMOS-IO/LMOS-msgspec-types"
+repository = "https://github.com/LMOS-IO/LMOS-msgspec-types"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools]
+package-data = { "lmos_msgspec_types" = ["py.typed"] }
